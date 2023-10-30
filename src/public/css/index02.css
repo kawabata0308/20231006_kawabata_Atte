@@ -1,0 +1,67 @@
+body{
+    max-width: 1400px;
+   }
+
+
+header{ 
+    display: flex;
+    padding: 0 2%;
+    justify-content: space-between
+  }
+
+  .header_logo{
+    font-size: 30px;
+  }
+
+  .header_nav-list{
+    display: flex;
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .header_nav_item{
+    margin-left: 50px;
+  }
+
+  .btn{
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .user{ 
+    table-layout: fixed; 
+    width: 93%;
+   } 
+
+  .user_list-item{
+    padding-left: 6em;
+    padding-top: 30px;
+  }
+
+  .pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 0px;
+    list-style-type: none;
+    padding: 10;
+  
+  }
+
+  .pagination a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    border: 1px solid #2589d0;
+    border-radius: 1px;
+    color: #2589d0;
+}
+
+footer{ 
+  text-align: center; 
+ } 

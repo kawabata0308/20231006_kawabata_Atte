@@ -1,0 +1,46 @@
+h2{
+        text-align: center;
+        padding-top: 4em;
+    }
+
+    .text_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    input[name="email"]{
+        margin-bottom: 30px;
+        width: 25%;
+        height: 40px;
+    }
+
+    input[name="password"]{
+        margin-bottom: 20px;
+        width: 25%;
+        height: 40px;
+    }
+
+    button.blue{
+        margin-bottom: 20px;
+        width: 25%;
+        height: 40px;
+        background-color: blue;
+    }
+
+    
+
+    button.blue{
+        color: white;
+       text-align: center;
+    }
+
+    .text_box-sub{
+        color: #c0c0c0;
+    }
+
+    .blue{
+        color: blue;
+        text-decoration: none;
+    }
