@@ -14,7 +14,7 @@ class RegisteredUserController extends Controller
     
     public function store(Request $request)
     {
-        $validatedData = $user->validated();
+        $validatedData = $request->validated();
         $user = RegisteredUser::create($validatedData);
         
         return view('attendance', ['user' => $user]);

@@ -31,6 +31,7 @@ Route::post('/register', [RegisteredUserController::class, 'store'])->name('regi
 
 Route::get('/login',[AuthenticatedSessionController::class,'create']);
 
+Route::get('/attendance',[AuthenticatedSessionController::class,'index']);
 Route::post('/attendance',[AuthenticatedSessionController::class,'store']);
 
 Route::get('/index',[AuthenticatedSessionController::class,'index1']);

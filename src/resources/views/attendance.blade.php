@@ -20,7 +20,8 @@
         </nav>
     </header>
      <div class="time">
-        <h2>{{ $user->accname }}</h2>
+        @if($user)
+        <h2><?php $user = Auth::user(); ?>{{ $user->name }}</h2>
     <div class="time_btn">
         <form class="form" action="/attendance" method="post">
             @csrf

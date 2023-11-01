@@ -45,7 +45,7 @@ class RegisterRequest extends FormRequest
         return view('attendance');
 
         return redirect()->route('register')
-    ->withErrors($validator)
-    ->withInput();
+        ->withErrors($validator)
+        ->withInput();
     }
 }
