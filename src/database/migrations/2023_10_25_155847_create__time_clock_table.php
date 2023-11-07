@@ -13,7 +13,7 @@ class CreateTimeClockTable extends Migration
      */
     public function up()
     {
-        Schema::create('_time_clock', function (Blueprint $table) {
+        Schema::create('time_clocks', function (Blueprint $table) {
             $table->id();
             $table->time('start_date_time');
             $table->time('end_date_time');
@@ -30,6 +30,6 @@ class CreateTimeClockTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_time_clock');
+        Schema::dropIfExists('time_clocks');
     }
 }

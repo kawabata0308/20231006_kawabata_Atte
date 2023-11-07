@@ -26,26 +26,26 @@ class RegisterRequest extends FormRequest
     public function rules()
     {
         return [
-            'account_name' => ['required','string','max:191',],
-            'account_email' => ['required','email','string','Unique:users',],
+            'account_name' => ['required','string','max:191'],
+            'account_email' => ['required','email','string','Unique:users'],
             'account_password' => ['required','min:8','max:191','confirmed'],
         ];
     }
 
-    public function create(RegisterRequest $request)
-    {
-        $user = RegisteredUser::create([
-            'account_name' => $request->input('account_name'),
+    // public function store(Request $request)
+    // {
+        // $user = RegisteredUser::create([
+            // 'account_name' => $request->input('account_name'),
+            // 
+            // 'account_email' => $request->input('account_email'),
             
-            'account_email' => $request->input('account_email'),
-            
-            'account_password' => Hash::make($request->input('password')),
-        ]);
+            // 'account_password' => Hash::make($request->input('password')),
+        // ]);
 
-        return view('attendance');
+        // return view('attendance');
 
-        return redirect()->route('register')
-        ->withErrors($validator)
-        ->withInput();
-    }
+        // return redirect()->route('register')
+        // ->withErrors($validator)
+        // ->withInput();
+    // }
 }
